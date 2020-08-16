@@ -5,7 +5,7 @@ import './App.css'
 function App() {
   return (
     <div className="wrapper">
-      <h1 className="h1 text-center">TAKE HOME ASSIGNMENT-3</h1>
+      {/* <h1 className="h1 text-center">TAKE HOME ASSIGNMENT-3</h1> */}
       <UserForm />
     </div>
   );

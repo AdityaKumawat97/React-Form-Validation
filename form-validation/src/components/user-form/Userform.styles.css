@@ -1,13 +1,3 @@
-/* Colors */
-
-/*
-dark blue: #476A6F
-light blue: #258EA6
-dark green: #519E8A
-medium green: #7EB09B
-light green: #A3C4BC
-*/
-
 
 
 .form-wrapper {
@@ -94,7 +84,7 @@ input.error {
 }
 
 .createAccount button {
-    background-color: #519e8a;
+    background-color: #FF6D00;
     color: #fff;
     border: 2px solid #fff;
     width: 100%;
@@ -104,15 +94,33 @@ input.error {
     font-weight: lighter;
     letter-spacing: 1px;
     margin-bottom: 0.25em;
+    border-radius: 2%!important;
 }
 
 .createAccount button:hover {
-    color: #519e8a;
+    color: #FF6D00;
     background-color: #fff;
-    border: 2px solid #519e8a;
+    border: 2px solid #FF6D00;
 }
 
 .createAccount small {
     color: #999;
     font-weight: lighter;
+}
+
+.hidealert{
+    display: none;
+}
+
+.formHeading{
+    color: #FF6D00 !important;
+}
+.hide{
+    display: none;
+}
+
+
+label{
+    color: #FF6D00!important;
+    font-size: medium;
 }
