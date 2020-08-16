@@ -1,12 +1,13 @@
 
 
 .form-wrapper {
+    z-index: 999;
     width: 400px;
     display: flex;
     flex-direction: column;
     padding: 20px 40px;
     border-radius: 10px;
-    box-shadow: 0px 10px 50px #555;
+    box-shadow: 0px 10px 50px rgb(32, 32, 32);
     background-color: #ffffff;
 }
 
@@ -122,5 +123,4 @@ input.error {
 
 label{
     color: #FF6D00!important;
-    font-size: medium;
 }

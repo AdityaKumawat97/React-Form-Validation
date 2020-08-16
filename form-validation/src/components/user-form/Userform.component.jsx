@@ -13,7 +13,7 @@ class UseForm extends Component {
             lastName: null,
             email: null,
             password: null,
-            FinalError: null,
+            FinalError: '',
             success: false,
             formErrors: {
                 firstName: "",
@@ -24,17 +24,14 @@ class UseForm extends Component {
         };
     }
 
-    handleSubmit = e => {
+    handleSubmit = async e => {
         e.preventDefault();
-
-        if (formValid(this.state)) {
+        const isValid = await formValid(this.state)
+        if (isValid) {
             this.setState({ FinalError: false })
-            this.setState({ success: true })
-            console.log(`
-        --SUBMITTING--`);
+            this.setState({ success: true }, () => console.log(this.state.success))
         } else {
             this.setState({ FinalError: true })
-            console.log(this.state.FinalError)
         }
     };
 
@@ -60,8 +57,9 @@ class UseForm extends Component {
             case "password":
                 formErrors.password = passwordRegex.test(value)
                     ? ""
-                    : `The password should have atleast 6 characters & contain at least one numeric digit
-                    and one uppercase and one lowercase letter`
+                    : `The password should have atleast: 
+                       6 characters & 
+                       contain at least one numeric digit and one uppercase and one lowercase letter`
                 break;
             default:
                 break;
@@ -75,8 +73,8 @@ class UseForm extends Component {
 
         return (
             <div>
-                <div className={success ? "alert alert-success" : "hide"}>
-                    <h4 class="alert-heading">Well done!</h4>
+                <div className={FinalError ? 'hide' : success ? "alert alert-success" : "hide"}>
+                    <h4 className="alert-heading">Well done!</h4>
                     <hr />
                 </div>
                 <div className="form-wrapper">
@@ -147,7 +145,7 @@ class UseForm extends Component {
                         </div>
                     </form>
                 </div>
-            </div>
+            </div >
         );
     }
 }
