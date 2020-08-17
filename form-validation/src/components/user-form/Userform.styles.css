@@ -1,14 +1,13 @@
-
-
 .form-wrapper {
     z-index: 999;
-    width: 400px;
+    width: 600px;
     display: flex;
     flex-direction: column;
-    padding: 20px 40px;
+    padding: 15px 40px;
     border-radius: 10px;
     box-shadow: 0px 10px 50px rgb(32, 32, 32);
     background-color: #ffffff;
+    margin-top: 3rem;
 }
 
 form {
@@ -32,12 +31,13 @@ label {
     font-weight: lighter;
 }
 
-input {
+input,select {
     padding: 10px 10px;
     border-radius: 5px;
     outline: none;
     border: 1px solid #cfcfcf;
 }
+
 
 input::placeholder {
     font-size: 1.2em;
@@ -109,18 +109,41 @@ input.error {
     font-weight: lighter;
 }
 
-.hidealert{
+.hidealert {
     display: none;
 }
 
-.formHeading{
+.formHeading {
     color: #FF6D00 !important;
 }
-.hide{
+
+.hide {
     display: none;
 }
 
-
-label{
+label {
     color: #FF6D00!important;
+}
+
+.Radio{
+    cursor: pointer;
+}
+
+.Radio label {
+    margin-left: 0.6em;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.showOpt{
+    display: block;
+}
+
+.item{
+    display: inline-block;
+    padding: 0.5em;
+}
+
+.item label{
+    margin-left: 0.4em;
 }
