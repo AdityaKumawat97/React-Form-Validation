@@ -1,6 +1,6 @@
 .form-wrapper {
     z-index: 999;
-    width: 600px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     padding: 15px 40px;

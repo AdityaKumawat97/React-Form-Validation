@@ -229,8 +229,37 @@ class UseForm extends Component {
                             </div>
                             <div className="item">
                                 <input type="checkbox" name="skills" id="2" value="ES5,ES6,ES7" />
-                                <label htmlFor="1">ES5,ES6,ES7</label>
+                                <label htmlFor="2">ES5,ES6,ES7</label>
                             </div>
+                            <div className="item">
+                                <input type="checkbox" name="skills" id="3" value="React JS" />
+                                <label htmlFor="3">React JS</label>
+                            </div>
+                            <div className="item">
+                                <input type="checkbox" name="skills" id="4" value="Gatsby JS" />
+                                <label htmlFor="4">Gatsby JS</label>
+                            </div>
+                            <div className="item">
+                                <input type="checkbox" name="skills" id="5" value="Node JS" />
+                                <label htmlFor="5">Node JS</label>
+                            </div>
+                            <div className="item">
+                                <input type="checkbox" name="skills" id="6" value="Express JS" />
+                                <label htmlFor="6">Express JS</label>
+                            </div>
+                            <div className="item">
+                                <input type="checkbox" name="skills" id="7" value="Vue JS" />
+                                <label htmlFor="7">Vue JS</label>
+                            </div>
+                            <div className="item">
+                                <input type="checkbox" name="skills" id="8" value="Next JS" />
+                                <label htmlFor="8">Next JS</label>
+                            </div>
+                            <div className="item">
+                                <input type="checkbox" name="skills" id="10" value="Bootstrap" />
+                                <label htmlFor="10">Bootstrap</label>
+                            </div>
+
                         </div>
                         <div className="createAccount">
                             <button type="submit" >Create Account</button>
